@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		621492442346BA710052673A /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621492432346BA710052673A /* FirebaseAuth.framework */; };
+		621492462346BA800052673A /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621492452346BA800052673A /* GTMSessionFetcher.framework */; };
+		621492482346BA9E0052673A /* GoogleUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621492472346BA9E0052673A /* GoogleUtilities.framework */; };
+		6214924A2346BABC0052673A /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 621492492346BABC0052673A /* FirebaseCore.framework */; };
 		8D69E26321DD4BD100CFA49B /* FirebaseAuthUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D69E25921DD4BD000CFA49B /* FirebaseAuthUI.framework */; };
 		8D69E26A21DD4BD100CFA49B /* FirebaseAuthUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D69E25C21DD4BD000CFA49B /* FirebaseAuthUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D69E29321DD4C5100CFA49B /* FUIAuthSignInButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D69E27321DD4C5000CFA49B /* FUIAuthSignInButton.h */; };
@@ -89,6 +93,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		621492432346BA710052673A /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = ../Carthage/Build/iOS/FirebaseAuth.framework; sourceTree = "<group>"; };
+		621492452346BA800052673A /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GTMSessionFetcher.framework; path = ../Carthage/Build/iOS/GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		621492472346BA9E0052673A /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = ../Carthage/Build/iOS/GoogleUtilities.framework; sourceTree = "<group>"; };
+		621492492346BABC0052673A /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = ../Carthage/Build/iOS/FirebaseCore.framework; sourceTree = "<group>"; };
 		8D69E25921DD4BD000CFA49B /* FirebaseAuthUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirebaseAuthUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D69E25C21DD4BD000CFA49B /* FirebaseAuthUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebaseAuthUI.h; sourceTree = "<group>"; };
 		8D69E25D21DD4BD000CFA49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -251,6 +259,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6214924A2346BABC0052673A /* FirebaseCore.framework in Frameworks */,
+				621492482346BA9E0052673A /* GoogleUtilities.framework in Frameworks */,
+				621492462346BA800052673A /* GTMSessionFetcher.framework in Frameworks */,
+				621492442346BA710052673A /* FirebaseAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +277,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		621492242346B46B0052673A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				621492492346BABC0052673A /* FirebaseCore.framework */,
+				621492472346BA9E0052673A /* GoogleUtilities.framework */,
+				621492452346BA800052673A /* GTMSessionFetcher.framework */,
+				621492432346BA710052673A /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D69E24F21DD4BD000CFA49B = {
 			isa = PBXGroup;
 			children = (
@@ -272,6 +295,7 @@
 				8D69E26621DD4BD100CFA49B /* FirebaseAuthUITests */,
 				8D69E25A21DD4BD000CFA49B /* Products */,
 				ACF63AA832F9F7882BC43A9D /* Pods */,
+				621492242346B46B0052673A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -810,6 +834,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -824,7 +852,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -873,6 +901,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -881,7 +913,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
