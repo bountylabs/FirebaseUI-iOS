@@ -27,8 +27,11 @@ NSString *const FUIAuthBundleName = @"FirebaseAuthUI";
   }
   NSString *path = [[NSBundle mainBundle] pathForResource:bundleName ofType:@"bundle"];
   if (!path) {
-    // Check framework resources if bundle isn't present in main bundle.
-    path = [[NSBundle mainBundle] pathForResource:bundleName ofType:@"framework"];
+      path = [[NSBundle mainBundle] pathForResource:bundleName ofType:@"framework" inDirectory:@"Frameworks"];
+      if (!path) {
+        // Check framework resources if bundle isn't present in main bundle.
+        path = [[NSBundle mainBundle] pathForResource:bundleName ofType:@"framework"];
+      }
   }
   frameworkBundle = [NSBundle bundleWithPath:path];
   if (!frameworkBundle) {
