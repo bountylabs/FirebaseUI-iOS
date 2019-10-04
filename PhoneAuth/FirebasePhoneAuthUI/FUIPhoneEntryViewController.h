@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 
-#import "FirebaseAuthUI.h"
+#import <FirebaseAuthUI/FirebaseAuthUI.h>
 
 @class FUICountryCodes;
 
