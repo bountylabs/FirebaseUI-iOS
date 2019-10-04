@@ -19,7 +19,7 @@
 #import <CoreTelephony/CTCarrier.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
 
-#import "FUIAuthUtils.h"
+@import FirebaseAuthUI;
 #import "FUIPhoneAuthStrings.h"
 
 NS_ASSUME_NONNULL_BEGIN

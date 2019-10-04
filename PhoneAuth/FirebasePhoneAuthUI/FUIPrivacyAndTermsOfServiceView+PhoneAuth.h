@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 
-#import "FUIPrivacyAndTermsOfServiceView.h"
+@import FirebaseAuthUI;
 
 NS_ASSUME_NONNULL_BEGIN
 

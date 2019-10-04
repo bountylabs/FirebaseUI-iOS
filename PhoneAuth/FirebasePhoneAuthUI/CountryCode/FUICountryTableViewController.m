@@ -16,7 +16,7 @@
 
 #import "FUICollationForCountries.h"
 
-#import "FUIAuthUtils.h"
+@import FirebaseAuthUI;
 #import "FUICountryCodes.h"
 #import "FUICountryTableViewController.h"
 #import "FUIFeatureSwitch.h"

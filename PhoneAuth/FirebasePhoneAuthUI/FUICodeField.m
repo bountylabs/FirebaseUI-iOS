@@ -16,7 +16,7 @@
 
 #import "FUICodeField.h"
 
-#import "FUIAuthUtils.h"
+@import FirebaseAuthUI;
 #import "FUIPhoneAuthStrings.h"
 
 NS_ASSUME_NONNULL_BEGIN

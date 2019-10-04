@@ -47,6 +47,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		62DAAE112346DBAB0055B359 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62DAAE0C2346DBAB0055B359 /* FirebaseAuthUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D69E25921DD4BD000CFA49B;
+			remoteInfo = FirebaseAuthUI;
+		};
+		62DAAE132346DBAB0055B359 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62DAAE0C2346DBAB0055B359 /* FirebaseAuthUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D69E26221DD4BD100CFA49B;
+			remoteInfo = FirebaseAuthUITests;
+		};
+		62DAAE152346DBB00055B359 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62DAAE0C2346DBAB0055B359 /* FirebaseAuthUI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D69E25821DD4BD000CFA49B;
+			remoteInfo = FirebaseAuthUI;
+		};
 		8D69E54C21DE915A00CFA49B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8D69E53821DE915A00CFA49B /* Project object */;
@@ -59,6 +80,7 @@
 /* Begin PBXFileReference section */
 		621492202346B3A40052673A /* FirebaseAuthUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuthUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6214924B2346BAD50052673A /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = ../Carthage/Build/iOS/FirebaseAuth.framework; sourceTree = "<group>"; };
+		62DAAE0C2346DBAB0055B359 /* FirebaseAuthUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FirebaseAuthUI.xcodeproj; path = ../Auth/FirebaseAuthUI.xcodeproj; sourceTree = "<group>"; };
 		8D69E54121DE915A00CFA49B /* FirebasePhoneAuthUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirebasePhoneAuthUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D69E54421DE915A00CFA49B /* FirebasePhoneAuthUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirebasePhoneAuthUI.h; sourceTree = "<group>"; };
 		8D69E54521DE915A00CFA49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -212,9 +234,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		62DAAE0D2346DBAB0055B359 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62DAAE122346DBAB0055B359 /* FirebaseAuthUI.framework */,
+				62DAAE142346DBAB0055B359 /* FirebaseAuthUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8D69E53721DE915A00CFA49B = {
 			isa = PBXGroup;
 			children = (
+				62DAAE0C2346DBAB0055B359 /* FirebaseAuthUI.xcodeproj */,
 				8D69E54321DE915A00CFA49B /* FirebasePhoneAuthUI */,
 				8D69E54E21DE915A00CFA49B /* FirebasePhoneAuthUITests */,
 				8D69E54221DE915A00CFA49B /* Products */,
@@ -343,6 +375,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				62DAAE162346DBB00055B359 /* PBXTargetDependency */,
 			);
 			name = FirebasePhoneAuthUI;
 			productName = FirebasePhoneAuthUI;
@@ -477,6 +510,12 @@
 			mainGroup = 8D69E53721DE915A00CFA49B;
 			productRefGroup = 8D69E54221DE915A00CFA49B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 62DAAE0D2346DBAB0055B359 /* Products */;
+					ProjectRef = 62DAAE0C2346DBAB0055B359 /* FirebaseAuthUI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D69E54021DE915A00CFA49B /* FirebasePhoneAuthUI */,
@@ -484,6 +523,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		62DAAE122346DBAB0055B359 /* FirebaseAuthUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FirebaseAuthUI.framework;
+			remoteRef = 62DAAE112346DBAB0055B359 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		62DAAE142346DBAB0055B359 /* FirebaseAuthUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FirebaseAuthUITests.xctest;
+			remoteRef = 62DAAE132346DBAB0055B359 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D69E53F21DE915A00CFA49B /* Resources */ = {
@@ -541,6 +597,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		62DAAE162346DBB00055B359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseAuthUI;
+			targetProxy = 62DAAE152346DBB00055B359 /* PBXContainerItemProxy */;
+		};
 		8D69E54D21DE915A00CFA49B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8D69E54021DE915A00CFA49B /* FirebasePhoneAuthUI */;
@@ -699,10 +760,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/../Auth/FirebaseAuthUI/**",
-				);
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -763,10 +820,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/../Auth/FirebaseAuthUI/**",
-				);
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

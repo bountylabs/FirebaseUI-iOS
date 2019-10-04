@@ -19,7 +19,7 @@
 #import <FirebaseAuth/FIRAuthUIDelegate.h>
 #import <FirebaseAuth/FIRPhoneAuthProvider.h>
 #import "FirebaseAuth/FIRPhoneAuthCredential.h"
-#import "FUIAuth_Internal.h"
+@import FirebaseAuthUI;
 #import "FUICodeField.h"
 #import "FUIPhoneAuthStrings.h"
 #import "FUIPhoneAuth_Internal.h"
